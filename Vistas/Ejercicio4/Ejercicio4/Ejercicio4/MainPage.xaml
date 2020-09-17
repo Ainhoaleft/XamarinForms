@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio4.MainPage">
+
+    <StackLayout>
+        <Label Text="Escribe el texto que quieras:"/>
+        <!-- El Entry tiene un evento llamado TextChanged que se 
+        ejecuta cada vez que modificamos el texto del entry-->
+        <Entry x:Name="eTexto"
+               TextChanged="OnTextoModificado"/>
+        <Label x:Name="lTexto"/>
+    </StackLayout>
+
+</ContentPage>

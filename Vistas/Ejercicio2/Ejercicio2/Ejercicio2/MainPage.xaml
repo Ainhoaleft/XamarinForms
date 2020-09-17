@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio2.MainPage">
+
+    <!-- Aplicación con un botón y un label. Inicialmente el label
+    muestra el texto "Hola", pero si se pulsa el botón pasa a mostrar "Mundo".
+    Si se pulsa el botón de nuevo vuelve a mostrarse "Hola", etc. -->
+    <StackLayout>
+        <!-- Botón con el texto Cambia, al ser pulsado ejecuta el método OnCambia -->
+        <Button Text="Cambia"
+                Clicked="OnCambia"
+                />
+        <!-- Label o etiqueta donde se muestra inicialmente el texto Hola.
+             Se utiliza el atributo x:Name para asignarle un nombre de 
+             variable que podamos utilizar en la parte de C#-->
+        <Label
+            x:Name="lTitulo"
+            Text="Hola"
+            FontSize="Header"
+            TextColor="SpringGreen"
+            />
+    </StackLayout>
+
+</ContentPage>

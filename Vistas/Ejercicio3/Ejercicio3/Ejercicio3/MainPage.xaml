@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio3.MainPage">
+    <!-- Podemos modificar el color de fondo indicando el BackgroundColor
+    del StackLayour. -->
+    <StackLayout BackgroundColor="LightGray">
+        <!-- Label para mostrar el texto "Calculadora" -->
+        <!--  Podemos utilizar hexadecimal para indicar el color, como podemos ver en el atributo TextColor-->
+        <Label Text="Calculadora" 
+               FontSize="30" 
+               HorizontalTextAlignment="Center"
+               TextColor="#FF3333"/>
+        <!-- Entries para escribir los números. 
+        La propiedad Keyboard="Numeric" sirve para que el usuario solo pueda escribir números -->
+        <Entry x:Name="eOperando1"
+               Placeholder="Operando 1"
+               Keyboard="Numeric"/>
+        <Entry x:Name="eOperando2"
+               Placeholder="Operando 2"
+               Keyboard="Numeric"/>
+        <!-- Un botón para cada una de las operaciones, cada botón ejecutará un método diferente -->
+        <Button Text="+" Clicked="OnSuma" />
+        <Button Text="-" Clicked="OnResta"/>
+        <Button Text="*" Clicked="OnMultiplicacion"/>
+        <Button Text="/" Clicked="OnDivision"/>
+        <!-- Label para mostrar el texto "Resultado" -->
+        <Label Text="Resultado"
+               HorizontalTextAlignment="Center"
+               FontSize="30"/>
+        <!-- Label donde se mostrará el resultado -->
+        <Label x:Name="lResultado" 
+               HorizontalTextAlignment="Center"
+               FontSize="30"/>
+    </StackLayout>
+
+</ContentPage>

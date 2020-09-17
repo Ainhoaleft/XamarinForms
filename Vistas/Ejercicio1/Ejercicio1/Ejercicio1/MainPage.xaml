@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1.MainPage">
+
+    <StackLayout>
+        <!-- Definición del entry, button y label -->
+        <!-- Asignamos x:Name tanto al entry como al label para poder acceder a sus propiedades desde C#-->
+        <Entry x:Name="eEntrada"/>
+        <!-- Al pulsar el botón se ejecutará el método OnPulsar -->
+        <Button Text="Copia"
+                Clicked="OnPulsar" />
+        <!-- El texto del label aparece centrado y con tamaño de fuente Large -->
+        <Label x:Name="eSalida"
+               HorizontalTextAlignment="Center"
+               FontSize="Large"/>
+    </StackLayout>
+
+</ContentPage>
