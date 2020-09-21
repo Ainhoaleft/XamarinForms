@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio8.MainPage">
+
+    <StackLayout>
+        <!-- El primer label solo tiene alineación del texto -->
+        <Label Text="Ejercicio 8"
+               FontSize="40"
+               BackgroundColor="Red"
+               HorizontalTextAlignment="Center"/>
+        <!-- El label está centrado tanto horizontal como verticalmente.
+        Para que el centrado vertical tenga efecto hay que añadir la cláusula AndExpand-->
+        <Label Text="Label"
+               FontSize="40"
+               BackgroundColor="Blue"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"/>
+        <!-- El botón está alineado horizontalmente a la izquierda (End) -->
+        <Button Text="Boton"
+               FontSize="40"
+               HorizontalOptions="End"/>
+    </StackLayout>
+</ContentPage>
