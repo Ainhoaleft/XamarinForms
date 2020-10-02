@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio15.MainPage">
+
+    <StackLayout>
+        <Button Text="Imagen 1" 
+                Clicked="OnImagen1" 
+                FontSize="30" />
+        <Button Text="Imagen 2" 
+                Clicked="OnImagen2" 
+                FontSize="30"/>
+        <Button Text="Imagen 3" 
+                Clicked="OnImagen3" 
+                FontSize="30"/>
+        <Image x:Name="iMiImagen"
+               Source="img1.jpg"
+               Aspect="AspectFill"
+               VerticalOptions="FillAndExpand"/>
+    </StackLayout>
+
+</ContentPage>

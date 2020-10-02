@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio11.MainPage">
+
+    <StackLayout>
+        <Label Text="Etiqueta1" 
+               BackgroundColor="Red"
+               HorizontalOptions="Start"
+               VerticalOptions="StartAndExpand"
+               FontSize="30"/>
+        <Label Text="Etiqueta2"
+               BackgroundColor="Yellow"
+               HorizontalOptions="Center"
+               VerticalOptions="StartAndExpand"
+               FontSize="30"/>
+        <Label Text="Etiqueta3"
+               BackgroundColor="Blue"
+               HorizontalOptions="End"
+               VerticalOptions="StartAndExpand"
+               FontSize="30"/>
+        <Label Text="Etiqueta4"
+               BackgroundColor="Green"
+               HorizontalOptions="Fill"
+               VerticalOptions="EndAndExpand"
+               FontSize="30"/>
+    </StackLayout>
+
+</ContentPage>

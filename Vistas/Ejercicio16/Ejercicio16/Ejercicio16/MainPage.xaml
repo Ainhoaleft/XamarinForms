@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio16.MainPage">
+
+    <StackLayout>
+        <StackLayout VerticalOptions="FillAndExpand"> 
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Anterior" Clicked="Anterior" FontSize="30" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Siguiente" Clicked="Siguiente"  FontSize="30" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Image x:Name="miImagen" Source="paisaje.jpg" VerticalOptions="FillAndExpand" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
