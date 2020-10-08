@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio17.MainPage">
+
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <CheckBox CheckedChanged="RojoChanged"
+                      IsChecked="True"/>
+            <Label Text="Rojo"
+                   FontSize="30"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <CheckBox x:Name="cbAzul"
+                      CheckedChanged="AzulChanged"
+                      IsChecked="True"/>
+            <Label Text="Azul"
+                   FontSize="30"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <CheckBox CheckedChanged="VerdeChanged" 
+                      IsChecked="True"/>
+            <Label Text="Verde"
+                   FontSize="30"/>
+        </StackLayout>
+        <Label x:Name="lbRojo" Text="Rojo" BackgroundColor="Red" FontSize="30"/>
+        <Label x:Name="lbAzul" Text="Azul" BackgroundColor="Blue" FontSize="30"/>
+        <Label x:Name="lbVerde" Text="Verde" BackgroundColor="Green" FontSize="30"/>
+    </StackLayout>
+
+</ContentPage>
