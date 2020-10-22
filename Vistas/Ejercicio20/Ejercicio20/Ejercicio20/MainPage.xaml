@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio20.MainPage">
+
+    <StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <CheckBox x:Name="cbRed"/>
+            <Label Text="Red" 
+                   HorizontalOptions="Center"
+                   FontSize="30"/>
+            <CheckBox x:Name="cbBlue"/>
+            <Label Text="Blue"
+                   HorizontalOptions="Center"
+                   FontSize="30"/>
+            <CheckBox x:Name="cbGreen"/>
+            <Label Text="Green" 
+                   HorizontalOptions="Center"
+                   FontSize="30"/>
+        </StackLayout>
+        <Button Text="Borrar" FontSize="30" Clicked="OnBorrar"/>
+        <StackLayout x:Name="slLabels"/>
+        <Button Text="Añadir" FontSize="30" Clicked="OnAdd" VerticalOptions="EndAndExpand"/>
+    </StackLayout>
+
+</ContentPage>
