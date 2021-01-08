@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1.MainPage">
+
+    <Grid ColumnSpacing="0" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <BoxView BackgroundColor="Red" Grid.Row="0" Grid.Column="0"/>
+        <BoxView BackgroundColor="Yellow" Grid.Row="0" Grid.Column="1"/>
+        <BoxView BackgroundColor="Blue" Grid.Row="0" Grid.Column="2"/>
+
+        <BoxView BackgroundColor="Magenta" Grid.Row="1" Grid.Column="0"/>
+        <BoxView BackgroundColor="LightPink" Grid.Row="1" Grid.Column="1"/>
+        <BoxView BackgroundColor="Beige" Grid.Row="1" Grid.Column="2"/>
+
+
+        <BoxView BackgroundColor="Green" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+        <Label Text="MiApp" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <BoxView BackgroundColor="Brown" Grid.Row="2" Grid.Column="2"/>
+
+        <BoxView BackgroundColor="Purple" Grid.Row="3" Grid.Column="0"/>
+        <BoxView BackgroundColor="SandyBrown" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+
+        <BoxView BackgroundColor="Blue" Grid.Row="4" Grid.Column="0"/>
+
+    </Grid>
+
+</ContentPage>

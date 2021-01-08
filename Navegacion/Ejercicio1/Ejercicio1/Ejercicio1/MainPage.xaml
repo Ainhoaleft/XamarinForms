@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1.MainPage">
+    <StackLayout Padding="5">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="7*" />
+            </Grid.ColumnDefinitions>
+            <Label Text="Nombre: " Grid.Row="0" Grid.Column="0" FontSize="18"/>
+            <Entry x:Name="eNombre" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1"/>
+
+            <Label Text="Email: " Grid.Row="1" Grid.Column="0" FontSize="18"/>
+            <Entry x:Name="eEmail" HorizontalOptions="FillAndExpand" Grid.Row="1" Grid.Column="1"/>
+
+            <Label Text="Contraseña: " Grid.Row="2" Grid.Column="0" FontSize="18"/>
+            <Entry x:Name="eContrasenya" IsPassword="True" HorizontalOptions="FillAndExpand" Grid.Row="2" Grid.Column="1"/>
+        </Grid>
+
+        <Button Text="Registrarse" Clicked="OnRegistrarse"/>
+    </StackLayout>
+
+
+</ContentPage>
