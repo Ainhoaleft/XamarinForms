@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio4.MainPage">
+
+    <StackLayout>
+        <Label x:Name="lHolaMundo" Text="HolaMundo" FontSize="32"/>
+        <Slider x:Name="sSlider"
+                Value="{Binding Source={Reference lHolaMundo}, Path=ScaleX}"/>
+    </StackLayout>
+
+</ContentPage>

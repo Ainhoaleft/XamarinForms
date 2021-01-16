@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio2.MainPage">
+
+    <StackLayout>
+        <Label Text="{Binding Source={Reference eEntrada}, Path=Text}"
+               FontSize="{Binding Source={Reference sSlider}, Path=Value}"/>
+        <Entry x:Name="eEntrada"/>
+        <Slider x:Name="sSlider" Maximum="100" Minimum="10"/>
+    </StackLayout>
+
+</ContentPage>

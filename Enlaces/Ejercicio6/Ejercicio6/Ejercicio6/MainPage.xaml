@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio6.MainPage">
+
+    <StackLayout>
+        <!-- Tanto el texto del Entry como el Label están enlazados a la misma 
+        propiedad UserName de la clase Login. Conforme escribimos texto en el Entry
+        éste se almacena en la propiedad UserName. Esto se puede comprobar al pulsar
+        el botón. Sin embargo, aunque se modifique la propiedad UserName, en el
+        label nunca se muestra el texto de la propiedad a pesar de haber echo
+        el Binding. Esto demuestra que el binding es unidireccional, de la vista
+        al código C#. Para que los cambios en la propiedad UserName se vean
+        reflejados en el Label es necesario implementar la notificación de cambios
+        como se indica en los apuntes.-->
+        <Entry Text="{Binding UserName}"/>
+        <Label Text="{Binding UserName}"/>
+        <Button Text="Alerta" Clicked="MostrarAlerta"/>
+    </StackLayout>
+
+</ContentPage>

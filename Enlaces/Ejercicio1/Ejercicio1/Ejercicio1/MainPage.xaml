@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1.MainPage">
+
+    <StackLayout>
+        <Label Text="Hola mundo!" BindingContext="{x:Reference sTamanyo}" FontSize="{Binding Value}" />
+        <Slider x:Name="sTamanyo" Maximum="100" Minimum="1"/>
+    </StackLayout>
+
+</ContentPage>
