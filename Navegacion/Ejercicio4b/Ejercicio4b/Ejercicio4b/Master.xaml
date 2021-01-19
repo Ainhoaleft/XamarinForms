@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio4b.Master"
+             Title="Ejercicio 2">
+    <ContentPage.Content Padding="10">
+        <StackLayout Padding="5">
+            <StackLayout Padding="2">
+                <Label Text="Datos" FontSize="24"/>
+                <!-- Añadimos un evento para que se ejecute al tocar el StackLayout -->
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnDatosTapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            <StackLayout Padding="2">
+                <Label Text="Configuración" FontSize="24"/>
+                <!-- Añadimos un evento para que se ejecute al tocar el StackLayout -->
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnConfiguracionTapped"/>
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

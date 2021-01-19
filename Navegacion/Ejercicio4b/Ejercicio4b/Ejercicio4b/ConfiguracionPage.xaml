@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio4b.ConfiguracionPage">
+    <ContentPage.Content>
+        <StackLayout Padding="30">
+            <Label Text="Tamaño de la fuente" />
+            <!-- MinimumTrackColor y MaximumTrackColor permiten cambiar el color del slider -->
+            <Slider x:Name="sFuente" Maximum="100" Minimum="10" MinimumTrackColor="Black" MaximumTrackColor="Black" />
+            <Label Text="Color" />
+            <Picker x:Name="pColores" />
+            <StackLayout Orientation="Horizontal">
+                <CheckBox x:Name="cbNegrita" />
+                <Label Text="Negrita" VerticalTextAlignment="Center"/>
+            </StackLayout>
+            <Button Text="Guardar" Clicked="GuardarClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
